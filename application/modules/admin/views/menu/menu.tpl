@@ -3,10 +3,7 @@
 </script>
 
 <section class="box big" id="main_link">
-	<h2>
-		<img src="{$url}application/themes/admin/images/icons/black16x16/ic_list.png"/>
-		Menu links (<div style="display:inline;" id="link_count">{if !$links}0{else}{count($links)}{/if}</div>)
-	</h2>
+	<h2><img src="{$url}application/themes/admin/images/icons/black16x16/ic_list.png"/> Menu links (<div style="display:inline;" id="link_count">{if !$links}0{else}{count($links)}{/if}</div>)</h2>
 
 	{if hasPermission("addMenuLinks")}
 	<span>

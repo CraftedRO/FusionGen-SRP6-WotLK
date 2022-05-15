@@ -1,7 +1,5 @@
 <section class="box big" id="main_link">
-	<h2>
-		Supported languages (<div style="display:inline;" id="logs_count">{if !$languages}0{else}{count($languages)}{/if}</div>)
-	</h2>
+	<h2><img src="{$url}application/themes/admin/images/icons/black16x16/ic_list.png"/> Supported languages (<div style="display:inline;" id="logs_count">{if !$languages}0{else}{count($languages)}{/if}</div>)</h2>
 
 	<ul id="log_list">
 	{if $languages}

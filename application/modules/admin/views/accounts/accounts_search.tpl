@@ -1,8 +1,5 @@
 <section class="box big" id="account_articles">
-	<h2>
-		<img src="{$url}application/themes/admin/images/icons/black16x16/ic_users.png"/>
-		Search
-	</h2>
+	<h2><img src="{$url}application/themes/admin/images/icons/black16x16/ic_users.png"/> Search</h2>
 
 	<form style="margin-top:0px;" onSubmit="Accounts.searchAccount(); return false;">
 		<input type="text" name="search_accounts" {if $auto}value="{$data.username}" {/if}id="search_accounts" placeholder="Search by username or email" style="width:90%;margin-right:5px;"/>

@@ -13,10 +13,8 @@ $lang['races'] = array(
 	6 => "Tauren",
 	7 => "Gnome",
 	8 => "Troll",
-	9 => "Goblin",
 	10 => "Blood elf",
-	11 => "Draenei",
-	22 => "Worgen"
+	11 => "Draenei"
 );
 
 $lang['classes'] = array(

@@ -1,7 +1,5 @@
 <section class="box big" id="main_link">
-	<h2>
-		Logs
-	</h2>
+	<h2><img src="{$url}application/themes/admin/images/icons/black16x16/ic_list.png"/> Logs</h2>
 
 	<!-- Note to whoever continues this: create javascript Logging object -->
 	<form style="margin-top:0px;" onSubmit="Logging.search(); return false">

@@ -1,7 +1,5 @@
 <section class="box big" id="main_sidebox">
-	<h2>
-		Sideboxes (<div style="display:inline;" id="sidebox_count">{if !$sideboxes}0{else}{count($sideboxes)}{/if}</div>)
-	</h2>
+	<h2><img src="{$url}application/themes/admin/images/icons/black16x16/ic_grid.png"/> Sideboxes (<div style="display:inline;" id="sidebox_count">{if !$sideboxes}0{else}{count($sideboxes)}{/if}</div>)</h2>
 
 	<span>
 		<a class="nice_button" href="javascript:void(0)" onClick="Sidebox.add()">Create sidebox</a>

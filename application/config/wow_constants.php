@@ -17,8 +17,7 @@ $config['races_en'] = array(
 	8 => "Troll",
 	9 => "Goblin",
 	10 => "Blood elf",
-	11 => "Draenei",
-	22 => "Worgen"
+	11 => "Draenei"
 );
 
 $config['classes_en'] = array(

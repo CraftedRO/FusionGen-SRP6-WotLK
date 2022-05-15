@@ -1,9 +1,6 @@
 <section class="box big">
 
-	<h2>
-		<img src="{$url}application/themes/admin/images/icons/black16x16/ic_settings.png"/>
-		What do you want to manage?
-	</h2>
+	<h2><img src="{$url}application/themes/admin/images/icons/black16x16/ic_settings.png"/> What do you want to manage?</h2>
 
 	<span style="padding-top:22px;padding-bottom:22px;">
 		<a href="{$url}admin/aclmanager/groups" class="big_icon_button" data-tip="Groups are a set of roles that is assigned to users">
