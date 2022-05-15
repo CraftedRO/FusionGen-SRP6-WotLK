@@ -383,4 +383,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	$EXT->_call_hook('post_system');
 
 /* End of file CodeIgniter.php */
+
 /* Location: ./system/core/CodeIgniter.php */

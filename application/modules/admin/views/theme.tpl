@@ -50,6 +50,6 @@
 	</ul>
 
 	<span>
-		<center><b>Want a new look?</b> Get more themes from <a href="https://discord.gg/vRnr6WJ" target="_blank">the official FusionGEN Discord Server</a></center>
+		<center><b>Want a new look?</b> Get more themes from <a href="https://discord.gg/5nSt9puU4V" target="_blank">the official FusionGEN Discord Server</a></center>
 	</span>
 </section>

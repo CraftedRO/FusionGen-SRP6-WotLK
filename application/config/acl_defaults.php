@@ -29,5 +29,4 @@ $config['default_player_group'] = 2;
 | Only used during the installation to assign owner access to one account
 |
 */
-
 $config['default_owner_group'] = 8;

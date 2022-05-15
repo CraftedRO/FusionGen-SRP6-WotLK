@@ -606,11 +606,11 @@ class Template
 		}
 
 		$a = array(
-			30 * 24 * 60 * 60		=> 'month',
-			24 * 60 * 60			=>  'day',
-			60 * 60					=>  'hour',
-			60						=>  'minute',
-			1						=>  'second'
+			30 * 24 * 60 * 60	=> 'month',
+			24 * 60 * 60		=>  'day',
+			60 * 60				=>  'hour',
+			60					=>  'minute',
+			1					=>  'second'
 		);
 
 		foreach($a as $secs => $str)

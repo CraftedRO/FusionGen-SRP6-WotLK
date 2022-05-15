@@ -79,4 +79,5 @@ class Trinity_rbac_ra extends Trinity_rbac_soap implements Emulator
 	{
 		sleep(3);
 	}
+	
 }

@@ -60,7 +60,6 @@ $lang['back_to_ucp'] = "Click here to go back to the User panel!";
 $lang['invalid_expansion'] = "The expansion you selected does not exists!";
 $lang['expansion'] = "Expansion";
 $lang['none'] = "None";
-
 $lang['change_information'] = "Change information";
 
 /**

@@ -14,7 +14,7 @@
 
 $smileys = array(
 
-//	smiley			image name						width	height	alt
+//	smiley			image name								width	height	alt
 
 	':-)'			=>	array('emoticon_grin.png',			'16',	'16',	'grin'),
 	':)'			=>	array('emoticon_smile.png',			'16',	'16',	'smile'),

@@ -5,7 +5,7 @@
 			{if !count($categories)}
 				Please add a category first
 			{else}
-			</br><input type="text" placeholder="{lang("change_info", "changelog")}" id="change_text" name="change" style="width:62%"/>
+			<br><input type="text" placeholder="{lang("change_info", "changelog")}" id="change_text" name="change" style="width:62%"/>
 			<select style="width:20%" name="category" id="changelog_types">
 				{foreach from=$categories item=category}
 					<option value="{$category.id}">{$category.typeName}</option>
@@ -29,7 +29,7 @@
 		{/if}
 
 		{if hasPermission("canAddCategory")}
-			</br></br></br><a href="javascript:void(0)" onClick="$('#change_form').hide();$('#category_form').fadeToggle(150)" class="nice_button">{lang("new_category", "changelog")}</a>
+			<br><br><br><a href="javascript:void(0)" onClick="$('#change_form').hide();$('#category_form').fadeToggle(150)" class="nice_button">{lang("new_category", "changelog")}</a>
 		{/if}
 	</div>
 </div>

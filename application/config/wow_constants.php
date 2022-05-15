@@ -1,7 +1,6 @@
 <?php 
 $config['races'] = lang("races", "wow_constants");
 $config['classes'] = lang("classes", "wow_constants");
-
 $config['alliance_races'] = array(1,3,4,7,11);
 $config['horde_races'] = array(2,5,6,8,10);
 
@@ -21,6 +20,7 @@ $config['races_en'] = array(
 	11 => "Draenei",
 	22 => "Worgen"
 );
+
 $config['classes_en'] = array(
 	1 => "Warrior",
 	2 => "Paladin",

@@ -1,5 +1,4 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
-
 /*
 |--------------------------------------------------------------------------
 | Base Site URL
@@ -14,7 +13,7 @@
 | path to your installation.
 |
 */
-$config['base_url'] =  '';
+$config['base_url'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -208,7 +207,6 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-
 if(file_exists("application/config/encryption_key.php"))
 {
 	require_once("application/config/encryption_key.php");

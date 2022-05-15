@@ -22,4 +22,4 @@ Read the [installation guide](INSTALL.md).
 
 ### Compatibility
 This CMS shoud be compatible with the latest TrinityCore and AzerothCore 3.3.5 emulators with [SRP6](https://en.wikipedia.org/wiki/Secure_Remote_Password_protocol).
-For other emulators check [FusionGEN](https://github.com/FusionGen) project github page.
+For other emulators check official [FusionGEN](https://github.com/FusionGen) project github page.

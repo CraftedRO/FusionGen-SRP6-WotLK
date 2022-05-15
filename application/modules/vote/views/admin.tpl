@@ -74,7 +74,6 @@
 				<div class="dropdown help">
 					<h3>How to configure vote verification for </h3>
 					<div>
-
 					</div>
 				</div>
 			</div>
