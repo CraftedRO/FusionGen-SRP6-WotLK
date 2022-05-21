@@ -17,7 +17,7 @@ CREATE TABLE IF NOT EXISTS `item_display` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `displayid` mediumint(8) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='Item System';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Item System';
 
 -- Dumping data for table fusion.item_display: 63,927 rows
 DELETE FROM `item_display`;

@@ -135,7 +135,7 @@ CREATE TABLE `item_display` (
   `displayid` mediumint(8) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`),
   KEY `displayid` (`displayid`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 ROW_FORMAT=FIXED;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of item_display
@@ -473,7 +473,7 @@ DROP TABLE IF EXISTS `spelltext_en`;
 CREATE TABLE `spelltext_en` (
   `spellId` int(11) NOT NULL,
   `spellText` text NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of spelltext_en
