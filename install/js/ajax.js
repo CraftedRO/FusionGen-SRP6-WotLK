@@ -241,7 +241,7 @@ var Ajax = {
 
 		complete: function()
 		{
-			$("#install").append("<div style='color:green;display:inline;'>done</div><br/>");
+			$("#install").append("<div style='color:green;display:inline;'>done</div><br>");
 		},
 
 		configs: function(name, callback)

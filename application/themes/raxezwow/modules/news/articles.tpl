@@ -31,7 +31,7 @@
 
 		<div class="comments" {$article.comments_id}></div>
 		{if $single}
-			<script type="text/javascript">
+			<script>
 				$(document).ready(function()
 				{
 					function checkIfLoaded()

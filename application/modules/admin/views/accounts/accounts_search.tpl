@@ -8,7 +8,7 @@
 
 	<div id="form_accounts_search">
 		{if $auto}
-			<script type="text/javascript">
+			<script>
 				$(document).ready(function()
 				{
 					function checkIfLoaded()

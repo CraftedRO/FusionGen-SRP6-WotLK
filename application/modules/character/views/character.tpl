@@ -36,7 +36,7 @@
 	</section>
 
 	<!--[if LT IE 8]>
-		<script type="text/javascript">
+		<script>
 			function noIE()
 			{
 				if(typeof UI != "undefined")
@@ -215,6 +215,6 @@
 
 <!-- Load wowhead tooltip -->
 {if !$fcms_tooltip}
-<script type="text/javascript" src="https://static.wowhead.com/widgets/power.js"></script>
+<script src="https://static.wowhead.com/widgets/power.js"></script>
 <script>var wowhead_tooltips = { "colorlinks": false, "iconizelinks": false, "renamelinks": false }</script>
 {/if}

@@ -28,12 +28,11 @@ Current FusionGEN Version: 1.0.2
 
 		<!-- Load scripts -->
 		<script src="{if $cdn}https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js{else}{$url}application/js/html5shiv.js{/if}"></script>
-		<script type="text/javascript" src="{if $cdn}https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js{else}{$url}application/js/jquery.min.js{/if}"></script>
-		<script type="text/javascript">var isIE = false;</script>
-		<script type="text/javascript" src="{$path}js/router.js"></script>
-		<script type="text/javascript" src="{$path}js/require.js"></script>
-		<script type="text/javascript">
-
+		<script src="{if $cdn}https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js{else}{$url}application/js/jquery.min.js{/if}"></script>
+		<script>var isIE = false;</script>
+		<script src="{$path}js/router.js"></script>
+		<script src="{$path}js/require.js"></script>
+		<script>
 			if(!window.console)
 			{
 				var console = {
@@ -131,7 +130,7 @@ Current FusionGEN Version: 1.0.2
 		</script>
 
 		{if $analytics}
-		<script type="text/javascript">
+		<script>
 		// Google Analytics
 		var _gaq = _gaq || [];
 		_gaq.push(['_setAccount', '{$analytics}']);

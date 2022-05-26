@@ -28,7 +28,7 @@ var Gm = {
 
 	ban: function()
 	{
-		var html = '<input type="text" id="ban_account" placeholder="' + lang("account_name", "gm") + '" value=""/><br /><input type="text" id="reason" placeholder="' + lang("ban_reason", "gm") + '" value=""/>';
+		var html = '<input type="text" id="ban_account" placeholder="' + lang("account_name", "gm") + '" value=""/><br><input type="text" id="reason" placeholder="' + lang("ban_reason", "gm") + '" value=""/>';
 
 		UI.confirm(html, "Ban", function()
 		{

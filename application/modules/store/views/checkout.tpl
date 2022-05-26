@@ -43,7 +43,7 @@
 				<a {if $item.tooltip}href="{$url}item/{$item.realm}/{$item.itemid}" data-realm="{$item.realm}" rel="item={$item.itemid}"{/if} class="item_name q{$item.quality}">
 					{$item.name}
 				</a>
-				<br/>{$item.description}
+				<br>{$item.description}
 				<div class="clear"></div>
 			</article>
 		{/foreach}

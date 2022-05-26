@@ -1,5 +1,5 @@
 <!--[if LT IE 8]>
-	<script type="text/javascript">
+	<script>
 		function noIE()
 		{
 			if(typeof UI != "undefined")

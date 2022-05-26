@@ -1,5 +1,5 @@
 <section id="store_wrapper">
-	<script type="text/javascript">
+	<script>
 		$(document).ready(function()
 		{
 			function checkIfLoaded()

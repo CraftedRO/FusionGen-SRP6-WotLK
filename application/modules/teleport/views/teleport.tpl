@@ -35,7 +35,7 @@
 							<img class="item_icon" width="36" height="36" src="{$url}application/images/avatars/{$character.avatar}.gif" align="absmiddle" data-tip="<img src='{$url}application/images/stats/{$character.class}.gif' align='absbottom'/> {$character.name} (Lvl {$character.level})">
 
 							<a class="character_name" data-tip="<img src='{$url}application/images/stats/{$character.class}.gif' align='absbottom'/> {$character.name} (Lvl {$character.level})">{$character.name}</a>
-							<br/><img src="{$url}application/images/icons/coins.png" align="absmiddle"> {floor($character.money / 10000)} {lang("gold", "teleport")}
+							<br><img src="{$url}application/images/icons/coins.png" align="absmiddle"> {floor($character.money / 10000)} {lang("gold", "teleport")}
 							<div class="clear"></div>
 						</div>
 					</div>
@@ -68,7 +68,7 @@
 					</section>
 
 					<a class="location_name">{$location.name}</a>
-					<br/>{$location.description}
+					<br>{$location.description}
 					<div class="clear"></div>
 				</div>
 			{/foreach}

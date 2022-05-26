@@ -19,7 +19,7 @@
 	<div id="{$id}" class="fusioneditor_field" style="min-height:{$height}px">{$content}</div>
 </div>
 
-<script type="text/javascript">
+<script>
 	$(document).ready(function()
 	{
 		function enableFusionEditor()

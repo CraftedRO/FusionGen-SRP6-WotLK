@@ -12,7 +12,7 @@
 		<input type="text" name="vote_image" id="vote_image" placeholder="(optional)" value="{$topsite.vote_image}" onChange="Topsites.updateImagePreview(this.value)"/>
 
 		<div id="vote_image_preview" {if ! $topsite.vote_image}style="display:none"{/if}>
-			<small>Preview:</small><br/>
+			<small>Preview:</small><br>
 			<img src="{$topsite.vote_image}" alt="Loading..."/>
 		</div>
 

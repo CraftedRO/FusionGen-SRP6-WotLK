@@ -4,7 +4,7 @@
 	</div>
 </section>
 
-<script type="text/javascript">
+<script>
 	var OnlineModule = {
 		field: $("#update_online_module"),
 

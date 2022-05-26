@@ -10,9 +10,9 @@
 		{if $extra_css}<link rel="stylesheet" href="{$url}application/{$extra_css}" type="text/css"/>{/if}
 
 		<script src="{if $cdn}https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js{else}{$url}application/js/html5shiv.js{/if}"></script>
-		<script type="text/javascript" src="{if $cdn}https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js{else}{$url}application/js/jquery.min.js{/if}"></script>
+		<script src="{if $cdn}https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js{else}{$url}application/js/jquery.min.js{/if}"></script>
 		
-		<script type="text/javascript">
+		<script>
 			if(!window.console)
 			{
 				var console = {
@@ -50,10 +50,10 @@
 			};
 		</script>
 
-		<script type="text/javascript" src="{$url}application/themes/admin/js/router.js"></script>
-		<script type="text/javascript" src="{$url}application/js/require.js"></script>
+		<script src="{$url}application/themes/admin/js/router.js"></script>
+		<script src="{$url}application/js/require.js"></script>
 
-		<script type="text/javascript">
+		<script>
 			var scripts = [
 				"{$url}application/js/jquery.placeholder.min.js",
 				"{$url}application/js/jquery.transit.min.js",

@@ -8,10 +8,10 @@
 		<link rel="shortcut icon" href="{$url}application/themes/admin/images/favicon.png"/>
 		<link rel="stylesheet" href="{$url}application/themes/admin/css/login.css" type="text/css"/>
 
-		<script type="text/javascript" src="{$url}application/js/html5shiv.js"></script>
-		<script type="text/javascript" src="{$url}application/js/jquery.min.js"></script>
+		<script src="{$url}application/js/html5shiv.js"></script>
+		<script src="{$url}application/js/jquery.min.js"></script>
 
-		<script type="text/javascript">
+		<script>
 			function getCookie(c_name)
 			{
 				var i, x, y, ARRcookies = document.cookie.split(";");
@@ -37,7 +37,7 @@
 
 		<script type="text/javascript" src="{$url}application/js/require.js"></script>
 
-		<script type="text/javascript">
+		<script>
 			var scripts = [
 				"{$url}application/js/jquery.placeholder.min.js",
 				"{$url}application/js/jquery.transit.min.js",

@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script>
 	if(typeof Search != "undefined")
 	{
 		Search.current = null;

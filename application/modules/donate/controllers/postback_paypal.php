@@ -125,36 +125,36 @@ class Postback_paypal extends MX_Controller
 				// Make sure the currency is correct
 				if($this->payment_currency != $this->config->item('donation_currency'))
 				{
-					$error .= "Invalid currency (set to ".$this->payment_currency.")<br />";
+					$error .= "Invalid currency (set to ".$this->payment_currency.")<br>";
 					$error_count++;
 				}
 
 				// Make sure the receiver email is correct
 				if($this->receiver_email != $this->config_paypal['email'])
 				{
-					$error .= "Invalid receiver email (set to ".$this->receiver_email.")<br />";
+					$error .= "Invalid receiver email (set to ".$this->receiver_email.")<br>";
 					$error_count++;
 				}
 
 				// Make sure the payment has not already been processed
 				if($this->transactionExists($this->txn_id) && $this->transactionIsAlreadyValidated($this->txn_id))
 				{
-					$error .= "Payment has already been processed<br />";
+					$error .= "Payment has already been processed<br>";
 					$error_count++;
 				}
 
 				// Make sure payment status is completed
 				if($this->payment_status != "Completed")
 				{
-					$error .= "Payment status is not completed (".$this->payment_status.")<br />";
+					$error .= "Payment status is not completed (".$this->payment_status.")<br>";
 					$error_count++;
 				}
 
 				//Add pending reasons
 				if($this->pending_reason == "unilateral")
 				{
-					$error .= "Pending_reason: unilateral<br />";
-					$error .= "The payment is pending because it was made to an email address that is not yet registered or confirmed.<br />";
+					$error .= "Pending_reason: unilateral<br>";
+					$error .= "The payment is pending because it was made to an email address that is not yet registered or confirmed.<br>";
 					$error_count += 2;
 				}
 
@@ -175,12 +175,12 @@ class Postback_paypal extends MX_Controller
 			}
 			elseif(stristr($res, "INVALID"))
 			{
-				$error .= "PayPal validation failed: invalid transaction<br />";
+				$error .= "PayPal validation failed: invalid transaction<br>";
 				$error_count++;
 			}
 			else
 			{
-				$error .= "Unknown problem<br />";
+				$error .= "Unknown problem<br>";
 			}
 
 			//insert the logs

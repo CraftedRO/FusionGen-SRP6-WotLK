@@ -3,7 +3,7 @@
 		{lang("the_account", "register")} <b>{$account}</b> {lang("has_been_created", "register")}
 	</span>
 {else}
-	<script type="text/javascript">
+	<script>
 			setTimeout(function(){
 				window.location = "{$url}ucp";
 			}, 1000);
