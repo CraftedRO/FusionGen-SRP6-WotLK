@@ -80,15 +80,6 @@ var Ajax = {
 		}
 	},
 
-	checkKey: function(license, onComplete)
-	{
-		$.post("http://fusion-hub.com/remote/license", {license: license}, function(data)
-		{
-			if (onComplete !== undefined)
-				onComplete(data == '1');
-		});
-	},
-
 	checkPhpVersion: function(onComplete)
 	{
 		$.get("system.php?step=checkPhpVersion", function(data)
