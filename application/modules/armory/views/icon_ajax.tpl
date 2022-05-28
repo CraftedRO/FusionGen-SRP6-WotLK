@@ -2,7 +2,7 @@
 	<img src="{$url}application/images/armory/default/loading.gif" width="18" height="18"/>
 </span>
 
-<script type="text/javascript">
+<script>
 	$(document).ready(function()
 	{
 		$.get(Config.URL + "icon/get/" + {$realm} + "/" + {$id}, function(data)

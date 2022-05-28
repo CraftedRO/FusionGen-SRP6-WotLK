@@ -10,7 +10,7 @@
 		</select>
 	</form>
 
-	<script type="text/javascript">
+	<script>
 		var formType = {if $item.query}"query"{else if $item.command}"command"{else}"item"{/if};
 	</script>
 

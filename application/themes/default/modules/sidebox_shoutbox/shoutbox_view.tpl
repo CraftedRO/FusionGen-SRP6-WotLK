@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script>
 	var shoutCount = {$count},
 		shoutsPerPage = {$shoutsPerPage},
 		currentShout = 0;

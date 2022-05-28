@@ -1,6 +1,6 @@
 {foreach from=$themes item=manifest key=id}
 	{if $manifest.folderName == $current_theme}
-		<script type="text/javascript">
+		<script>
 			
 			function checkForTheme()
 			{

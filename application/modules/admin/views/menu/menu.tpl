@@ -1,4 +1,4 @@
-<script type="text/javascript">
+<script>
 	var customPages = JSON.parse('{json_encode($pages)}');
 </script>
 

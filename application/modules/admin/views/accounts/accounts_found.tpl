@@ -41,10 +41,10 @@
 
 	{if hasPermission("editPermissions")}
 
-			<label data-tip="A user can be specifically allowed or denied to perform a certain action.<br/>
-			By setting a user permission, the value you set overrides the group roles<br/>
-			(example: the user group is allowed to submit comments, but you set the user<br/>
-			specifically not to be allowed to - then the user won't be allowed to, despite<br/>
+			<label data-tip="A user can be specifically allowed or denied to perform a certain action.<br>
+			By setting a user permission, the value you set overrides the group roles<br>
+			(example: the user group is allowed to submit comments, but you set the user<br>
+			specifically not to be allowed to - then the user won't be allowed to, despite<br>
 			being assigned to a group that is allowed to.)">User permissions <a>(?)</a></label>
 			<div id="roles">
 				{foreach from=$modules key=name item=module}

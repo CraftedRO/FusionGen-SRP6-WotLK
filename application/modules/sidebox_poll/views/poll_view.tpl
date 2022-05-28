@@ -1,5 +1,5 @@
 {if $poll}
-	<script type="text/javascript">
+	<script>
 		var pollTotal = {$total};
 
 		var show_results = "{lang("show_results", "sidebox_poll")}";

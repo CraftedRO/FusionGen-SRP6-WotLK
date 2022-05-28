@@ -35,7 +35,7 @@
 			};
 		</script>
 
-		<script type="text/javascript" src="{$url}application/js/require.js"></script>
+		<script src="{$url}application/js/require.js"></script>
 
 		<script>
 			var scripts = [

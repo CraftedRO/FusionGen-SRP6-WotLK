@@ -31,7 +31,7 @@
 	}
 </style>
 
-<script type="text/javascript">
+<script>
 	function setLanguage(language, field)
 	{
 		$("#language_picker").fadeOut(250, function()
