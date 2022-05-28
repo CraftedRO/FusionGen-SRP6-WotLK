@@ -22,7 +22,7 @@ var Memory = (function()
 	// Fields for each step
 	var steps = {
 		2: [
-			"license"
+			"validation"
 		],
 
 		4: [

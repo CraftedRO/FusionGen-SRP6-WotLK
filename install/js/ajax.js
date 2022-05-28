@@ -248,7 +248,7 @@ var Ajax = {
 				description: $("#description").val(),
 				analytics: $("#analytics").val(),
 				cdn: $("#cdn").val(),
-				license: $("#license").val(),
+				validation: $("#validation").val(),
 				cms_hostname: $("#cms_hostname").val(),
 				cms_username: $("#cms_username").val(),
 				cms_password: $("#cms_password").val(),
