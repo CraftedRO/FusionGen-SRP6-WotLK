@@ -223,10 +223,10 @@ class Register extends MX_Controller
 
 		$this->activation_model->remove($account['id'], $account['username'], $account['email']);
 
-		$this->external_account_model->createAccount($account['username'], $account['password'], $account['email'], $account['expansion'], true);
+		$this->external_account_model->createAccount($account['username'], $account['password'], $account['email'], $account['expansion']);
 
 		// Log in
-		$this->user->setUserDetails($account['username'], $account['password']);
+		$this->user->setUserDetails($account['username'], $this->user->createHash($account['username'], $account['password']));
 
 		// Show success message
 		$data = array(
