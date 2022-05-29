@@ -39,7 +39,7 @@ class News_model extends CI_Model
 			return array(
 						array(
 							'id' => 0,
-							'headline' => 'Welcome to FusionCMS V6!',
+							'headline' => 'Welcome to FusionGen!',
 							'content' => 'Welcome to your new website! This news article will disappear as soon as you add a new one.',
 							'author_id' => 0,
 							'timestamp' => time(),

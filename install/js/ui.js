@@ -62,7 +62,7 @@ var UI = {
 		validation: function(notifyResult) {
 			var validation = $("#validation").val();
 
-			Ajax.checkKey(validation, function(valid) {
+			Ajax.checks(validation, function(valid) {
 				// prepare data for next step
 				Ajax.checkPermissions();
 				Ajax.checkPhpExtensions();

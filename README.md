@@ -1,6 +1,6 @@
 ### FusionGen-SRP6
 
-Latest FusionGEN Version: 1.0.2 
+Latest FusionGEN Version: 1.0.2 but faster.
 - Based on FusionCMS Version: 6.2.1
 
 ### Requirements
