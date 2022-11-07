@@ -169,7 +169,7 @@ class News extends MX_Controller
 		{
 			$this->news_articles[$key]['headline'] = langColumn($article['headline']);
 			$this->news_articles[$key]['content'] = langColumn($article['content']);
-			$this->news_articles[$key]['date'] = date("Y/m/d", $article['timestamp']);
+			$this->news_articles[$key]['date'] = date("d/m/Y", $article['timestamp']);
 			$this->news_articles[$key]['author'] = $this->user->getNickname($article['author_id']);
 			$this->news_articles[$key]['link'] = ($article['comments'] == -1)? '' : "href='javascript:void(0)' onClick='Ajax.showComments(".$article['id'].")'";
 			$this->news_articles[$key]['comments_id'] = "id='comments_".$article['id']."'";
