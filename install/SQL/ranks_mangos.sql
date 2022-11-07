@@ -27,7 +27,7 @@ CREATE TABLE `ranks` (
   `is_admin` int(1) DEFAULT '0',
   `is_owner` int(1) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of ranks

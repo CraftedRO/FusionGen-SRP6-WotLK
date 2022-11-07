@@ -10,7 +10,7 @@ CREATE TABLE `account_data` (
   `location` varchar(255) DEFAULT NULL,
   `nickname` varchar(32) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Table structure for `articles`
@@ -25,7 +25,7 @@ CREATE TABLE `articles` (
   `avatar` varchar(255) DEFAULT NULL,
   `comments` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of articles
@@ -45,7 +45,7 @@ CREATE TABLE `changelog` (
   PRIMARY KEY (`change_id`),
   KEY `FK_changelog_changelog_type` (`type`),
   CONSTRAINT `FK_changelog_changelog_type` FOREIGN KEY (`type`) REFERENCES `changelog_type` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of changelog
@@ -60,7 +60,7 @@ CREATE TABLE `changelog_type` (
   `typeName` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of changelog_type
@@ -78,7 +78,7 @@ CREATE TABLE `ci_sessions` (
   `user_data` text NOT NULL,
   PRIMARY KEY (`session_id`),
   KEY `last_activity_idx` (`last_activity`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Table structure for `comments`
@@ -91,7 +91,7 @@ CREATE TABLE `comments` (
   `timestamp` int(11) DEFAULT NULL,
   `content` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Table structure for `daily_signups`
@@ -101,7 +101,7 @@ CREATE TABLE `daily_signups` (
   `date` varchar(255) NOT NULL DEFAULT '',
   `amount` int(11) DEFAULT '0',
   PRIMARY KEY (`date`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Table structure for `image_slider`
@@ -114,7 +114,7 @@ CREATE TABLE `image_slider` (
   `text` varchar(255) DEFAULT NULL,
   `order` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of image_slider
@@ -135,7 +135,7 @@ CREATE TABLE `item_display` (
   `displayid` mediumint(8) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`),
   KEY `displayid` (`displayid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of item_display
@@ -156,7 +156,7 @@ CREATE TABLE `menu` (
   PRIMARY KEY (`id`),
   KEY `FK_menu_ranks` (`rank`),
   CONSTRAINT `FK_menu_ranks` FOREIGN KEY (`rank`) REFERENCES `ranks` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=102 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=102 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of menu
@@ -191,7 +191,7 @@ CREATE TABLE `monthly_income` (
   `month` varchar(255) NOT NULL DEFAULT '',
   `amount` int(11) DEFAULT '0',
   PRIMARY KEY (`month`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Table structure for `monthly_votes`
@@ -201,7 +201,7 @@ CREATE TABLE `monthly_votes` (
   `month` varchar(255) NOT NULL DEFAULT '',
   `amount` int(11) DEFAULT '0',
   PRIMARY KEY (`month`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Table structure for `order_log`
@@ -216,7 +216,7 @@ CREATE TABLE `order_log` (
   `cart` text,
   `timestamp` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Table structure for `pages`
@@ -232,7 +232,7 @@ CREATE TABLE `pages` (
   UNIQUE KEY `identifier` (`identifier`),
   KEY `fk_rank_needed_ranks` (`rank_needed`),
   CONSTRAINT `fk_rank_needed_ranks` FOREIGN KEY (`rank_needed`) REFERENCES `ranks` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of pages
@@ -258,7 +258,7 @@ CREATE TABLE `paygol_logs` (
   `currency` varchar(255) DEFAULT NULL,
   `timestamp` int(11) DEFAULT NULL,
   PRIMARY KEY (`message_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Table structure for `paypal_logs`
@@ -277,7 +277,7 @@ CREATE TABLE `paypal_logs` (
   `error` text,
   `timestamp` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Table structure for `pending_accounts`
@@ -293,7 +293,7 @@ CREATE TABLE `pending_accounts` (
   `ip` varchar(255) DEFAULT NULL,
   `key` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of pending_accounts
@@ -318,7 +318,7 @@ CREATE TABLE `private_message` (
   KEY `FK_private_message_account_data_2` (`sender_id`),
   CONSTRAINT `FK_private_message_account_data` FOREIGN KEY (`user_id`) REFERENCES `account_data` (`id`),
   CONSTRAINT `FK_private_message_account_data_2` FOREIGN KEY (`sender_id`) REFERENCES `account_data` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Table structure for `ranks`
@@ -333,7 +333,7 @@ CREATE TABLE `ranks` (
   `is_admin` int(1) DEFAULT '0',
   `is_owner` int(1) DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of ranks
@@ -365,7 +365,7 @@ CREATE TABLE `realms` (
   `emulator` varchar(255) DEFAULT NULL,
   `realm_port` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Table structure for `shouts`
@@ -379,7 +379,7 @@ CREATE TABLE `shouts` (
   PRIMARY KEY (`id`),
   KEY `FK_shouts_account_data` (`author`),
   CONSTRAINT `FK_shouts_account_data` FOREIGN KEY (`author`) REFERENCES `account_data` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Table structure for `sideboxes`
@@ -394,7 +394,7 @@ CREATE TABLE `sideboxes` (
   PRIMARY KEY (`id`),
   KEY `fk_sb_rank_needed` (`rank_needed`),
   CONSTRAINT `fk_sb_rank_needed` FOREIGN KEY (`rank_needed`) REFERENCES `ranks` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of sideboxes
@@ -412,7 +412,7 @@ CREATE TABLE `sideboxes_custom` (
   `content` text NOT NULL,
   UNIQUE KEY `sidebox_id` (`sidebox_id`),
   CONSTRAINT `FK_sideboxes_custom_sideboxes` FOREIGN KEY (`sidebox_id`) REFERENCES `sideboxes` (`id`) ON DELETE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of sideboxes_custom
@@ -429,7 +429,7 @@ CREATE TABLE `sideboxes_poll_answers` (
   PRIMARY KEY (`answerid`),
   KEY `FK__sideboxes_poll_questions` (`questionid`),
   CONSTRAINT `FK__sideboxes_poll_questions` FOREIGN KEY (`questionid`) REFERENCES `sideboxes_poll_questions` (`questionid`) ON DELETE CASCADE ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of sideboxes_poll_answers
@@ -443,7 +443,7 @@ CREATE TABLE `sideboxes_poll_questions` (
   `questionid` int(10) NOT NULL AUTO_INCREMENT,
   `question` varchar(50) NOT NULL,
   PRIMARY KEY (`questionid`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of sideboxes_poll_questions
@@ -459,7 +459,7 @@ CREATE TABLE `sideboxes_poll_votes` (
   `userid` int(11) DEFAULT NULL,
   `time` int(11) DEFAULT NULL,
   KEY `fk_answers` (`questionid`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of sideboxes_poll_votes
@@ -472,7 +472,7 @@ DROP TABLE IF EXISTS `spelltext_en`;
 CREATE TABLE `spelltext_en` (
   `spellId` int(11) NOT NULL,
   `spellText` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of spelltext_en
@@ -6987,7 +6987,7 @@ CREATE TABLE `store_groups` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Records of store_groups
@@ -7008,7 +7008,7 @@ CREATE TABLE `banlist_pics` (
   `uploaded_by` int(5) unsigned NOT NULL,
   `uploaded_date` int(5) unsigned NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Table structure for `store_items`
@@ -7031,7 +7031,7 @@ CREATE TABLE `store_items` (
   `tooltip` int(1) DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `fk_group` (`group`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Table structure for `teleport_locations`
@@ -7053,7 +7053,7 @@ CREATE TABLE `teleport_locations` (
   PRIMARY KEY (`id`),
   KEY `realm_fk` (`realm`),
   CONSTRAINT `realm_fk` FOREIGN KEY (`realm`) REFERENCES `realms` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Table structure for `visitor_log`
@@ -7062,7 +7062,7 @@ DROP TABLE IF EXISTS `visitor_log`;
 CREATE TABLE `visitor_log` (
   `date` varchar(10) DEFAULT NULL,
   `ip` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Table structure for `vote_log`
@@ -7077,7 +7077,7 @@ CREATE TABLE `vote_log` (
   PRIMARY KEY (`id`),
   KEY `FK_vote_log_vote_sites` (`vote_site_id`),
   CONSTRAINT `FK_vote_log_vote_sites` FOREIGN KEY (`vote_site_id`) REFERENCES `vote_sites` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Table structure for `vote_sites`
@@ -7085,14 +7085,14 @@ CREATE TABLE `vote_log` (
 DROP TABLE IF EXISTS `vote_sites`;
 CREATE TABLE `vote_sites` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
-  `vote_sitename` varchar(50) DEFAULT 'FusionCMS',
+  `vote_sitename` varchar(50) DEFAULT 'FusionGEN',
   `vote_url` varchar(255) DEFAULT 'http://',
   `vote_image` varchar(255) DEFAULT NULL,
   `hour_interval` int(10) NOT NULL DEFAULT '12',
   `points_per_vote` tinyint(4) NOT NULL DEFAULT '1',
   `api_enabled` int(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4;
 
 -- ----------------------------
 -- Table structure for `vote_site_callback`
@@ -7103,4 +7103,4 @@ CREATE TABLE `vote_site_callback` (
   `custom_callback_url` varchar(255) NOT NULL,
   KEY `FK__vote_sites` (`site_id`),
   CONSTRAINT `FK__vote_sites` FOREIGN KEY (`site_id`) REFERENCES `vote_sites` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS `item_display` (
   `entry` mediumint(8) unsigned NOT NULL DEFAULT '0',
   `displayid` mediumint(8) unsigned NOT NULL DEFAULT '0',
   PRIMARY KEY (`entry`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='Item System';
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Item System';
 
 -- Dumping data for table item_display: 87,136 rows
 /*!40000 ALTER TABLE `item_display` DISABLE KEYS */;
