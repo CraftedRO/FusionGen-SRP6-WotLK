@@ -27,8 +27,8 @@ Current FusionGEN Version: 1.0.2
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 
 		<!-- Load scripts -->
-		<script src="{if $cdn}https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js{else}{$url}application/js/html5shiv.js{/if}"></script>
-		<script src="{if $cdn}https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js{else}{$url}application/js/jquery.min.js{/if}"></script>
+		<script src="{if $cdn}//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js{else}{$path}js/jquery.min.js{/if}"></script>
+		<script src="{if $cdn}//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js{else}{$path}js/html5shiv.js{/if}"></script>
 		<script>var isIE = false;</script>
 		<script src="{$path}js/router.js"></script>
 		<script src="{$path}js/require.js"></script>
