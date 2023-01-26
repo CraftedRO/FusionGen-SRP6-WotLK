@@ -88,6 +88,10 @@ class Settings extends MX_Controller
 
 		switch($this->input->post('disabled_expansions'))
 		{
+			case "wotlk":
+				$disabled_expansions = array($this->realms->getEmulator()->getExpansionId("Cataclysm"));
+			break;
+
 			case "tbc":
 				$disabled_expansions = array($this->realms->getEmulator()->getExpansionId("WotLK"), $this->realms->getEmulator()->getExpansionId("Cataclysm"));
 			break;
